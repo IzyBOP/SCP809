@@ -32,7 +32,7 @@ function App() {
                 <br></br>
                 <div className="classified">
                   <p>THE FOLLOWING FILES HAVE BEEN CLASSIFIED</p>
-                  <div className="TS">TOP SECRET</div>
+                  <div className="ts">TOP SECRET</div>
                   <p>BY ORDER OF THE EZYKIEL "ONLY" WAIBA</p>
                 </div>
 
