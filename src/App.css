@@ -1,19 +1,21 @@
+/* base styles */
 body {
   margin: 0;
   background-color: #0d0d0d;
   color: #aaa;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'courier new', courier, monospace;
   letter-spacing: 2px;
 }
 
-/* Layout Wrapper */
-.app-container {
+/* layout wrapper */
+.appcontainer {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-.home-page {
+/* home page container */
+.home {
   height: 100%;
   max-width: 100%;
   margin: 2rem auto;
@@ -22,35 +24,40 @@ body {
   text-align: center;
 }
 
+/* header styles */
 .header h1 {
-  font-family: 'Segoe UI', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'segoe ui', avenir, helvetica, arial, sans-serif;
   font-size: 4rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header h2 {
-  font-family: 'Segoe UI', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'segoe ui', avenir, helvetica, arial, sans-serif;
   font-size: 1.5rem;
   color: #aaa;
 }
 
-.divider p {
+/* dot loading / intro effect */
+.dots p {
   font-size: 1.5rem;
   color: crimson;
 }
 
-.classified-warning p {
+/* classified label */
+.classified p {
   font-size: 1.2rem;
   color: #aaa;
 }
 
-.classified-text {
+/* top secret label */
+.ts {
   font-size: 2.4rem;
   color: crimson;
   text-shadow: 0 0 10px red;
 }
 
-.warning-section h2 {
+/* warning section */
+.warning h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
   color: crimson;
@@ -58,7 +65,7 @@ body {
   font-weight: normal;
 }
 
-.warning-section p {
+.warning p {
   color: #aaa;
   line-height: 1.6;
   max-width: 600px;
@@ -66,14 +73,15 @@ body {
   font-size: 1rem;
 }
 
-.final-warning {
+/* final warning text */
+.finalwarning {
   margin-top: 1rem;
   font-size: 1.3rem;
   color: crimson;
   text-shadow: 0 0 10px red;
 }
 
-/* Sidebar */
+/* sidebar menu */
 .sidebar {
   background-color: #000000;
   width: 250px;
@@ -86,12 +94,13 @@ body {
   overflow-y: auto;
 }
 
+/* hidden sidebar state */
 .sidebar.hidden {
-  transform: translateX(-100%);
+  transform: translatex(-100%);
 }
 
-/* Nav toggle button */
-.toggle-btn {
+/* sidebar toggle button */
+.navbutton {
   background-color: #333;
   color: #fff;
   border: none;
@@ -105,11 +114,11 @@ body {
   font-size: 1.2rem;
 }
 
-.toggle-btn:hover {
+.navbutton:hover {
   background-color: #555;
 }
 
-/* Sidebar nav links */
+/* sidebar navigation links */
 .sidebar a {
   color: #fff;
   text-decoration: none;
@@ -123,8 +132,8 @@ body {
   color: grey;
 }
 
-/* Main content */
-.main-content {
+/* main content container */
+.main {
   flex: 1;
   background-color: #000000;
   padding: 2rem;
@@ -132,8 +141,8 @@ body {
   position: absolute;
 }
 
-/* Image styling */
-.detail-image {
+/* image container styling */
+.infoimage {
   width: 100%;
   max-height: 300px;
   object-fit: contain;
@@ -145,7 +154,8 @@ img {
   border-radius: 6px;
 }
 
-.info-box {
+/* info box styling */
+.info {
   color: #aaa;
   border: 1px solid #444;
   padding: 1rem;
@@ -156,38 +166,38 @@ img {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.info-box h3 {
+/* info headings */
+.info h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.info-box p {
+/* info text */
+.info p {
   margin: 0;
   line-height: 1.6;
 }
 
-
-/* Typography */
+/* headings */
 h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-
 h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-/* Reset and default link */
+/* default link style */
 a {
   font-weight: 500;
   color: #aaa;
@@ -198,9 +208,9 @@ a:hover {
   color: #fff;
 }
 
-/* Button general styles */
+/* button styles */
 button {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'courier new', courier, monospace;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;

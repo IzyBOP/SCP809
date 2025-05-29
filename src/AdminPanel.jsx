@@ -12,7 +12,7 @@ function AdminPanel() {
   });
   const [editRecord, setEditRecord] = useState(null);
 
-  // Fetch all items from Supabase
+//fetch all items from Supabase
   const fetchItems = async () => {
     const { data, error } = await supabase.from("scp").select("*");
     if (error) {
@@ -26,7 +26,7 @@ function AdminPanel() {
     fetchItems();
   }, []);
 
-  // Add new item
+//add new item
   const addItem = async () => {
     const { data, error } = await supabase
       .from("scp")
@@ -41,7 +41,7 @@ function AdminPanel() {
     }
   };
 
-  // Delete item
+//delete item
   const deleteItem = async (id) => {
     const { error } = await supabase.from("scp").delete().eq("id", id);
     if (error) {
@@ -51,12 +51,12 @@ function AdminPanel() {
     }
   };
 
-  // Start editing
+//start editing
   const startEditing = (item) => {
-    setEditRecord({ ...item }); // create a copy
+    setEditRecord({ ...item }); //create a copy
   };
 
-  // Save edited item
+//save edited item
   const saveEdit = async (id) => {
     const { error } = await supabase.from("scp").update(editRecord).eq("id", id);
     if (error) {
